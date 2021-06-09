@@ -1,0 +1,3 @@
+hugo server &
+ungit --forcedLaunchPath="/home/monkyyy/src/hugo;"
+zenity --info --text="hello"

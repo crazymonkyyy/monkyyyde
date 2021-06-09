@@ -1,0 +1,4 @@
+cd ~/src/hugo/content/images
+scrot -s $1.png
+pix $1.png
+~/monkyyyde/bash/hugoimagesyntax $1

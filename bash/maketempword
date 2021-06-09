@@ -1,0 +1,2 @@
+rm tempword
+echo $(zenity --entry) > ~/.tempword

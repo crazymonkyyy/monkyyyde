@@ -1,0 +1,4 @@
+./monkyyyde/bash/startworkspace2templatemaker $1 $(date +%Y-%m-%d)
+cd ~/Documents
+wordgrinder --convert template.txt $1.wg
+cool-retro-term -e wordgrinder ~/Documents/$1.wg

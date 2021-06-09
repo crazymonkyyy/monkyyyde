@@ -1,0 +1,9 @@
+cd ~/Documents
+rm template.txt
+touch template.txt
+echo "---" >>template.txt
+echo "title:" '"'$1'"'>>template.txt
+echo "date:" '"'$2'"'>>template.txt
+echo "draft:" '"false"'>>template.txt
+echo "categories: []" >>template.txt
+echo "---">>template.txt

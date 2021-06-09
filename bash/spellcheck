@@ -1,0 +1,1 @@
+ddgr -n=3 -C --unsafe $(cat ~/.tempword) > .templookup

@@ -1,0 +1,14 @@
+zenity
+lxapperence #gtk settings
+xmodmap and xcape #remap caplock and super on release deamons
+xrandr --listmonitors 
+scrot
+pix #blog scheenshot editor script
+export QT_STYLE_OVERRIDE="QGtkStyle" # in thoery tell qt to use gtk theme
+xclip -selection clipboard #pipe things into the clipbroad
+nemo # the okish file broswer
+word grinder + cool-retro-term
+noto-fonts
+sgtk-grid #launcher
+
+hugo 0.74 / downgrader

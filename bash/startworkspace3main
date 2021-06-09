@@ -1,0 +1,9 @@
+newfile=~/src/hugo/content/posts/$2.md
+cd ~/Documents
+wordgrinder --convert $2.wg $2.md
+cp $2.md $newfile
+firefox --new-window http://localhost:1313/ &
+bspc node -p east -o .5 --follow
+textadept -f $newfile &
+bspc node -p south -o .8 --follow
+lxterminal --working-directory=~/src/hugo/ -e "./monkyyyde/bash/workspace3-term"

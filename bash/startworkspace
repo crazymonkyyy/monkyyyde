@@ -1,0 +1,9 @@
+cd $1
+textadept -f $(ls) &
+bspc node -p east --follow
+textadept -f -n &
+bspc node -p south -o .6 --follow
+nemo $1 &
+sleep 1
+bspc node -p south -o .15 --follow
+lxterminal --working-directory=$1 &

@@ -1,0 +1,4 @@
+bspc subscribe node_add | while read -a msg ; do
+    node_id=${msg[4]}
+    bspc node "$node_id" -t floating
+done

@@ -1,0 +1,2 @@
+file=$(zenity --file-selection --filename=/home/monkyyy/Documents/)
+./monkyyyde/bash/startworkspace3main $file $(~/monkyyyde/d/dropextansion $(~/monkyyyde/d/dropfolder $file))
