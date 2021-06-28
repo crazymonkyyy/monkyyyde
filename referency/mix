@@ -1,0 +1,18 @@
+// expansion at /usr/include/dlang/dmd/std/format/internal/write.d(1990,40)
+(in ref int a) => a
+
+// expansion at /usr/include/dlang/dmd/std/functional.d(446,16)
+cast(T)a < cast(T) b
+
+// expansion at /usr/include/dlang/dmd/std/functional.d(446,16)
+cast(T)a < cast(T) b
+
+// expansion at /usr/include/dlang/dmd/std/functional.d(472,37)
+a < b
+
+// expansion at /usr/include/dlang/dmd/std/functional.d(475,32)
+a < b
+
+// expansion at 
+.object.size_t h = 0;foreach (i, T; typeof(p.tupleof))    static if(is(T* : const(.object.Object)*))         h = h * 33 + typeid(const(.object.Object)).getHash(cast(const void*)&p.tupleof[i]);    else         h = h * 33 + typeid(T).getHash(cast(const void*)&p.tupleof[i]);return h;
+
