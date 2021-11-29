@@ -1,0 +1,4 @@
+pkill -f firefox
+sleep 1
+pkill -9 -f firefox
+systemctl hibernate

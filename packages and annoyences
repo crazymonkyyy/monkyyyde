@@ -9,6 +9,6 @@ xclip -selection clipboard #pipe things into the clipbroad
 nemo # the okish file broswer
 word grinder + cool-retro-term
 noto-fonts
-sgtk-grid #launcher
+nwg-launchers #launcher
 
 hugo 0.74 / downgrader

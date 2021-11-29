@@ -1,0 +1,8 @@
+grid.w=10;
+grid.h=10;
+grid.x=0;
+grid.y=0;
+tool.w=20;
+tool.h=20;
+tool.color=8;
+tool.strange=0;

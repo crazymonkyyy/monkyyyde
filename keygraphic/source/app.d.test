@@ -1,0 +1,31 @@
+import raylib;
+import std.stdio;
+import std.string;
+void main(string[] commandlineinput){
+	InitWindow(200, 300, "Hello, Raylib-D!");
+	SetWindowPosition(2000,0);
+	import std.conv;
+	int[] count(int i,int j){
+		int[] o;
+		foreach(a;i..j){o~=a;}
+		return o;
+	}
+	enum int[] chars_=['★','ɑ'];
+	enum int[] chars= count(32,126)~chars_;
+	Font thefont =LoadFontEx("SymbolaRegular.ttf",32,&chars[0],chars.length.to!int);
+	GetGlyphIndex(thefont,'★').writeln;
+	GetGlyphIndex(thefont,'ɑ').writeln;
+	SetTargetFPS(1);
+	int i;
+	while (!WindowShouldClose()){with(KeyboardKey){
+		BeginDrawing();
+		ClearBackground(Colors.WHITE);
+			enum fonts=["SymbolaRegular.ttf"];
+			thefont=LoadFontEx(fonts[i%$].toStringz,64,&chars[0],chars.length.to!int);
+			DrawTextEx(thefont,"★",Vector2(100,100),64,1,Colors.BLACK);
+			DrawTextEx(thefont,"ɑ",Vector2(100,200),64,1,Colors.BLACK);
+		EndDrawing();
+		i++;
+	}}
+	CloseWindow();
+}

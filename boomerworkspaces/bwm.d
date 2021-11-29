@@ -73,11 +73,13 @@ void main(string[] input){
 		string cmd="bspc node -d "~desktop;
 		spawnShell(cmd);
 	}
-	
 	if(input[1]!="setup"){
+		s= ( cast(state_[]) read("temp") )[0];
+	}
+	if(input[1]=="setup"){
 		spawnShell("bspc monitor "~monitor1~" -d 1a 2a 3a 4a 5a 6a 7a 8a 9a 0a");
 		spawnShell("bspc monitor "~monitor2~" -d 1b 2b 3b 4b 5b 6b 7b 8b 9b 0b");
-		s= ( cast(state_[]) read("temp") )[0];}
+	}
 	if(input[1]=="poke"){
 		if(input[2]=="main"){poke1;say1;}
 		else{poke2;say2;}
